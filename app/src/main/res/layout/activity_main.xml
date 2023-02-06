@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    tools:context=".MainActivity">
+
+    <!-- ImageView: Contact thumbnail-->
+    <ImageView
+        android:id="@+id/profileIv"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:background="#c0c0c0"
+        android:src="@drawable/ic_person" />
+    <!--EditText: First Name-->
+    <EditText
+        android:id="@+id/firstNameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileIv"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textColorHint="#c5c5c5" />
+    <!--EditText: Last Name-->
+    <EditText
+        android:id="@+id/lastNameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstNameEt"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textColorHint="#c5c5c5" />
+    <!-- EditText: Phone Number (Mobile)-->
+    <EditText
+        android:id="@+id/PhoneMobileEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lastNameEt"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:hint="Phone Number (Mobile)"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textColorHint="#c5c5c5"
+         />
+<!-- EditText: Phone Number (Home)-->
+    <EditText
+        android:id="@+id/PhoneHomeEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PhoneMobileEt"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:hint="Phone Number (Home)"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textColorHint="#c5c5c5"
+        />
+<!--    EditText: Email-->
+    <EditText
+        android:id="@+id/emailEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PhoneHomeEt"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textColorHint="#c5c5c5"
+        />
+<!--    EditText: Address-->
+    <EditText
+        android:id="@+id/addressEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailEt"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:hint="Address"
+        android:inputType="textPostalAddress"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textColorHint="#c5c5c5"
+        />
+<!--    FloatingActionButton: To save the Contact-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/saveFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_add"
+        android:contentDescription="@string/todo" />
+
+</RelativeLayout>
